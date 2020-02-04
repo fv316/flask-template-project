@@ -27,7 +27,7 @@ class BaseConfig(object):
     # Third party services - codacy.com
     # Coverage given by codacy.com. You need to register you project
     # there so they can give you the access token for this functionality
-    CODACY_PROJECT_TOKEN = os.getenv("CODACY_PROJECT_TOKEN")
+    CODACY_PROJECT_TOKEN = os.getenv("c46eb787fe47463b858eb1e1cfa5291a")
 
 
 class TestConfig(BaseConfig):
