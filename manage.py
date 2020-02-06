@@ -6,9 +6,9 @@ from project import create_app
 
 # in case we run the test command choose the "TestConfig"
 import sys
-arg_dict = dict((i, v) for i, v in enumerate(sys.argv))
-config = "config.TestConfig" if arg_dict.get(1, None) == "test" else None
-app = create_app(config)
+#arg_dict = dict((i, v) for i, v in enumerate(sys.argv))
+#config = "config.TestConfig" if arg_dict.get(1, None) == "test" else None
+app = create_app(None)
 manager = Manager(app)
 
 
@@ -16,8 +16,7 @@ manager = Manager(app)
 def page_not_found(e):
     return render_template('404.html'), 404
 
-
-if __name__ == '__main__':
+def main():
     import project.commands as cmd
     manager.add_command("worker", cmd.WorkerCommand())
     manager.add_command("test", cmd.TestCommand())
@@ -26,6 +25,9 @@ if __name__ == '__main__':
     manager.add_command("delete-user", cmd.DeleteUserCommand())
     manager.add_command("create-db", cmd.CreateDBCommand())
     manager.run()
+
+if __name__ == '__main__':
+    main()
 
 
 __version__ = '0.0.0.1'

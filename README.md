@@ -96,3 +96,7 @@ If you don't find anything regarding what you are looking for or if you have any
 
 
 Fork, clone, share! 
+
+## To run waitress-serve
+
+waitress-serve --port=8041 --host=0.0.0.0 manage:app
