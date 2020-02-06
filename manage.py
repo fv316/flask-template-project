@@ -28,6 +28,6 @@ if __name__ == '__main__':
     manager.run()
 
 
-__version__ = '0.2.0'
-__author__ = "Andre Silva"
-__email__ = "andreffs18@gmail.com"
+__version__ = '0.0.0.1'
+__author__ = "Francisco Correia"
+__email__ = "fvc@hotmail.co.uk"
