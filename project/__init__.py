@@ -82,8 +82,8 @@ def create_app(config=None):
 
     # register api endpoints
     from project.api.v1.user import User
-    api = Api(app, prefix='/api/v1/')
-    api.add_resource(User, 'users/', endpoint='api.v1.users')
+    api = Api(app, prefix='/api/')
+    api.add_resource(User, 'users/', endpoint='api.users')
 
     # import custom login manager functions
     from project.user.login_manager import load_user_from_request, load_user

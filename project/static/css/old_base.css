@@ -1,0 +1,67 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+html {
+  font-size: 14px;
+}
+body {
+  background-color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+.navbar-custom {
+  background-color: #2b3e50;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  margin: 0;
+}
+.page-admin > .navbar-custom {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+.navbar-custom .navbar-nav > li > a {
+  color: #fff;
+  padding: auto 20px;
+}
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+  background-color: #3e576d;
+}
+.navbar-custom .navbar-brand {
+  color: #fff;
+}
+.navbar-custom .btn-link {
+  color: #fff;
+}
+.btn-group-header {
+  padding: 10px 5px;
+}
+.home-header {
+  padding: 10px 30px;
+}
+.stats-btn {
+  background-color: transparent;
+  color: #2499d3;
+}
+.sidebar .nav {
+  margin-bottom: 20px;
+}
+table thead {
+  background-color: #f7f7f7;
+  color: #808080;
+}
+table th,
+table td {
+  text-align: left;
+}
+
+/* Placeholders */
+.placeholders {
+  padding-bottom: 3rem;
+}
+
+.placeholder img {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
